@@ -6,6 +6,43 @@
     <title>Toitumine</title>
 </head>
 <body>
-    <p>Siia tuleb toitumisalane info</p>
+    <h1>Kaalu tõstmine</h1>
+    <p>Enne järgmisi samme. Arvuta välja kui palju energiat kulub sul umbes ühes päevas.</p>
+    <h2>Kaloraaži kalkulaator</h2>
+
+    <label for="vanus">Vanus(aastates)</label>>
+    <input type="number" id="vanus" placeholder="Sisestage oma vanus" required>
+
+    <label for="pikkus">Pikkus(cm)</label>>
+    <input type="number" id="pikkus" placeholder="Sisestage oma pikkus" required>
+
+    <label for="kaal">Kaal(kg)</label>>
+    <input type="number" id="kaal" placeholder="Sisestage oma kaal" required>
+
+    <label for="Aktiivsustase">Aktiivsustase:</label>
+    <select id="Aktiivsustase">
+        <option value="1.2">Paikne (?)</option>
+        <option value="1.375">Kergelt aktiivne</option>
+        <option value="1.55">Mõõdukalt aktiivne</option>
+        <option value="1.725">Väga aktiivne</option>
+        <option value="1.9">Eriti aktiivne</option>
+    </select>
+    <button onclick="arvuta()">Arvuta</button>
+
+    <div id="tulemus"></div>
+
+    <script>
+        function arvuta() {
+            var vanus = parseFloat(document.getElementById("vanus").value);
+            var kaal = parseFloat(document.getElementById("kaal").value);
+            var pikkus = parseFloat(document.getElementById("pikkus").value);
+            var Aktiivsustase = parseFloat(document.getElementById("Aktiivsustase").value);
+            var tulemus = Math.round((10 * kaal + 6.25 * pikkus - 5 * vanus + 5) * Aktiivsustase);
+
+            var vastus = document.getElementById("tulemus");
+            vastus.innerHTML = "Arvutatud tulemus: " + tulemus + "kcal";
+        }
+    </script>
+    <p>Source valem: https://www.acko.com/calculators/tdee-calculator/ </p>
 </body>
 </html>
