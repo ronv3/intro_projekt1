@@ -1,7 +1,60 @@
 body {
-  background-color: rgb(139, 134, 132);
+  background-color: rgb(190, 187, 186);
 }
-kast {
+.kast {
   border: 10px solid powderblue;
   padding: 10px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/*Navigatsiooni riba */
+#navigatsioon {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 20px;
+  color: white;
+}
+/*Sisu div asetus */
+#sisu {
+  margin-left: 250px; /* Adjust the margin to leave space for the sidebar */
+  padding: 20px;
+}
+/*Navigatsiooni nuppude kastid */
+ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1a0a0;
+  border: 1px solid #f50101;
+}
+/*Navigatsiooni nupud */
+li a {
+  display: block;
+  text-align: center;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 3px solid #555;
+}
+/*!EI TÖÖTA ?! :( !L isti elementidel on bottom border, aga viimasele pole vaja, sest kastibloki border on juba seal*/
+li:last-child {
+  border-bottom: none;
+}
+/*aktiivse lehe välimus*/
+.active {
+  background-color: #8304aa;
+  color: white;
+}
+/*kasti välimus kui kursor seal peal*/
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }

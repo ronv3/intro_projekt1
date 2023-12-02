@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Kaalu langetamine</h1>
-    <p>Enne järgmisi samme. Arvuta välja kui palju energiat kulub sul umbes ühes päevas.</p>
-    <h2>Kaloraaži kalkulaator</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="kaloraaz.js"></script>
+        <title>Kaalu langetamine</title>
+        <link rel="stylesheet" type="text/css" href="stiil.css">
+    </head>
 
-    <label for="vanus">Vanus(aastates)</label>>
-    <input type="number" id="vanus" placeholder="Sisestage oma vanus" required>
 
-    <label for="pikkus">Pikkus(cm)</label>>
-    <input type="number" id="pikkus" placeholder="Sisestage oma pikkus" required>
+    <body>
+        <div id="navigatsioon">
+            <h2>Lehel navigeerimine</h2>
 
-    <label for="kaal">Kaal(kg)</label>>
-    <input type="number" id="kaal" placeholder="Sisestage oma kaal" required>
+            <ul>
+            <li><a href="leht1.html">Avaleht</a></li>
+            <li><a class="active" href="leht2.html">Kaalu langetamine</a></li>
+            <li><a href="leht3.html">Kaalu tõstmine</a></li>
+            </ul>
+        </div>
 
-    <label for="Aktiivsustase">Aktiivsustase:</label>
-    <select id="Aktiivsustase">
-        <option value="1.2">Paikne (?)</option>
-        <option value="1.375">Kergelt aktiivne</option>
-        <option value="1.55">Mõõdukalt aktiivne</option>
-        <option value="1.725">Väga aktiivne</option>
-        <option value="1.9">Eriti aktiivne</option>
-    </select>
-    <button onclick="arvuta()">Arvuta</button>
+        <div id="sisu">
+            <h1>Kaalu langetamine</h1>
+            <p>Enne järgmisi samme. Arvuta välja kui palju energiat kulub sul umbes ühes päevas.</p>
+            <h2>Kaloraaži kalkulaator</h2>
 
-    <div id="tulemus"></div>
+            <label for="vanus">Vanus(aastates)</label>>
+            <input type="number" id="vanus" placeholder="Sisestage oma vanus" required>
 
-    <script>
-        function arvuta() {
-            var vanus = parseFloat(document.getElementById("vanus").value);
-            var kaal = parseFloat(document.getElementById("kaal").value);
-            var pikkus = parseFloat(document.getElementById("pikkus").value);
-            var Aktiivsustase = parseFloat(document.getElementById("Aktiivsustase").value);
-            var tulemus = Math.round((10 * kaal + 6.25 * pikkus - 5 * vanus + 5) * Aktiivsustase);
+            <label for="pikkus">Pikkus(cm)</label>>
+            <input type="number" id="pikkus" placeholder="Sisestage oma pikkus" required>
 
-            var vastus = document.getElementById("tulemus");
-            vastus.innerHTML = "Arvutatud tulemus: " + tulemus + "kcal";
-        }
-    </script>
-    <p>Source valem: https://www.acko.com/calculators/tdee-calculator/ </p>
-    
+            <label for="kaal">Kaal(kg)</label>>
+            <input type="number" id="kaal" placeholder="Sisestage oma kaal" required>
+
+            <label for="Aktiivsustase">Aktiivsustase:</label>
+            <select id="Aktiivsustase">
+                <option value="1.2">Paikne</option>
+                <option value="1.375">Kergelt aktiivne</option>
+                <option value="1.55">Mõõdukalt aktiivne</option>
+                <option value="1.725">Väga aktiivne</option>
+                <option value="1.9">Eriti aktiivne</option>
+            </select>
+            <button onclick="arvuta()">Arvuta</button>
+
+            <div id="tulemus"></div>
+            <p>Kalkulaatori valem: https://www.acko.com/calculators/tdee-calculator</p>
+        </div>
 </body>
 </html>
