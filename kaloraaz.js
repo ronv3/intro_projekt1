@@ -1,4 +1,4 @@
-
+/*kaloraaži kalkulaatori arvutamise funktsioon*/
 function arvuta() {
     var vanus = parseFloat(document.getElementById("vanus").value);
     var kaal = parseFloat(document.getElementById("kaal").value);
