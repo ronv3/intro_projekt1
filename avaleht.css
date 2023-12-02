@@ -1,0 +1,31 @@
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    background-image: url('muskel.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.hall_kast {
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    bottom: 30%;
+    left: 83%;
+    background-color: rgba(170, 165, 165, 0.5); /* Semi-transparent black overlay */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px; 
+    align-items: flex-start;
+}
+
+.tekst_kast {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    align-items: left;
+}
