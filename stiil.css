@@ -11,7 +11,7 @@ p{
   position: fixed;
   left: 0;
   top: 0;
-  width: 200px;
+  width: 202px;
   height: 100%;
   background-color: #333;
   padding-top: 20px;
@@ -31,6 +31,7 @@ ul {
   width: 200px;
   background-color: #f1a0a0;
   border: 1px solid #f50101;
+  border-radius: 9px;
 }
 /*Navigatsiooni nupud */
 li a {
@@ -40,6 +41,7 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
   border-bottom: 3px solid #555;
+  border-radius: 9px;
 }
 /*!EI TÖÖTA ?! :( !L isti elementidel on bottom border, aga viimasele pole vaja, sest kastibloki border on juba seal*/
 li:last-child {

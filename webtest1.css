@@ -51,6 +51,8 @@ body, html {
 
 .header {
     position: absolute;
+    top: 5%;
+    left: 90%;
     padding: 20px; /* Add padding for better visibility */
     color: #fff; /* Adjust text color based on your design */
     
