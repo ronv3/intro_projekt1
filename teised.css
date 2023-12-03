@@ -1,0 +1,105 @@
+#section1 {
+    background-image: url('muskel.jpg');
+}
+
+#section2 {
+    background-image: url('kalorid.jpg');
+}
+
+#section3 {
+    background-image: url('toitumine2.jpg');
+}
+
+#section4 {
+    background-image: url('gym.png');
+}
+
+#section5 {
+    background-image: url('öö.jpg');
+}
+
+.hall_kast_treening {
+    position: absolute;
+    top: 5%;
+    right: 40%;
+    bottom: 22%;
+    left: 35%;
+    background-color: rgba(170, 165, 165, 0.5); /* Semi-transparent black overlay */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px; 
+    align-items: flex-start;
+}
+
+.hall_kast_toit {
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    bottom: 50%;
+    left: 35%;
+    background-color: rgba(170, 165, 165, 0.5); /* Semi-transparent black overlay */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px; 
+    align-items: flex-start;
+}
+
+
+.hall_kast_llaud{
+    position: absolute;
+    top: 35%;
+    right: 19%;
+    bottom: 35%;
+    left: 50%;
+    
+    background-color: rgba(170, 165, 165, 0.42); /* Semi-transparent black overlay */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px; 
+    align-items: flex-start;
+
+}
+
+.hall_kast_väli{
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    bottom: 17%;
+    left: 75%;
+    
+    background-color: rgba(170, 165, 165, 0.42); /* Semi-transparent black overlay */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px; 
+    align-items: flex-start;
+
+}
+.tekst_kast_treening {
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    align-items: right
+    
+}
+
+.background-image {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Default text color on background */
+    
+}
+
+/*paneb lehe keskele teksti*/
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: left;
+}

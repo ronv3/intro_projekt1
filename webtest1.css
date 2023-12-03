@@ -11,7 +11,7 @@ body, html {
     background-size: cover;
     background-position: center;
     color: #fff; /* Default text color on background */
-    text-align: center;
+    
 }
 
 .image-overlay {
@@ -91,4 +91,26 @@ h1 {
 
 p {
     font-size: 1.2em;
+}
+
+.hall_kast_treening {
+    position: absolute;
+    top: 10%;
+    right: -50;
+    bottom: -22%;
+    left: 4%;
+    background-color: rgba(170, 165, 165, 0.5); /* Semi-transparent black overlay */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px; 
+    align-items: flex-start;
+}
+
+.tekst_kast_treening {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    align-items: left;
 }
