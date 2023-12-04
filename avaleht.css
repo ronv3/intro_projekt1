@@ -12,20 +12,25 @@
     position: absolute;
     top: 10%;
     right: -5%;
-    bottom: 30%;
     left: 83%;
-    background-color: rgba(170, 165, 165, 0.5); /* Semi-transparent black overlay */
     transform: translateX(-50%);
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 15px; 
-    align-items: flex-start;
+    background-color: rgba(170, 165, 165, 0.42);
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 70%;
+    min-height: 30%;
+    height: auto;
 }
 
 .tekst_kast {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    align-items: left;
+    max-width: 100%;
+}
+.tekst_kast ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tekst_kast ul li {
+  margin-bottom: 10px;
 }

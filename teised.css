@@ -22,28 +22,26 @@
     position: absolute;
     top: 5%;
     right: 40%;
-    bottom: 22%;
     left: 35%;
-    background-color: rgba(170, 165, 165, 0.5); /* Semi-transparent black overlay */
     transform: translateX(-50%);
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 15px; 
-    align-items: flex-start;
+    background-color: rgba(170, 165, 165, 0.42);
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 70%;
+    height: auto;
 }
 
 .hall_kast_toit {
     position: absolute;
     top: 5%;
     right: 25%;
-    bottom: 50%;
     left: 35%;
-    background-color: rgba(170, 165, 165, 0.5); /* Semi-transparent black overlay */
     transform: translateX(-50%);
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 15px; 
-    align-items: flex-start;
+    background-color: rgba(170, 165, 165, 0.42);
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 70%;
+    height: auto;
 }
 
 
@@ -51,11 +49,9 @@
     position: absolute;
     top: 35%;
     right: 19%;
-    bottom: 25%;
     left: 50%;
-    
-    background-color: rgba(170, 165, 165, 0.42); /* Semi-transparent black overlay */
     transform: translateX(-50%);
+    background-color: rgba(170, 165, 165, 0.42); /* Semi-transparent black overlay */
     display: flex;
     flex-direction: column; /* Set flex direction to column */
     align-items: center; /* Center the content horizontally */
@@ -63,30 +59,7 @@
     border-radius: 15px; 
     padding: 15px; /* Optional: Add padding for better spacing */
     max-width: 70%;
-    max-height: 60%;
-}
-
-.hall_kast_väli{
-    position: absolute;
-    top: 30%;
-    right: 3%;
-    bottom: 17%;
-    left: 75%;
-    
-    background-color: rgba(170, 165, 165, 0.42); /* Semi-transparent black overlay */
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 15px; 
-    align-items: flex-start;
-
-}
-.tekst_kast_treening {
-    position: absolute;
-    top: 3%;
-    left: 4%;
-    align-items: right
-    
+    height: auto; /* Adjust height automatically based on content */
 }
 
 .background-image {
@@ -100,6 +73,5 @@
 
 /*paneb lehe keskele teksti*/
 .image-text {
-    width: 100%; /* Make the text container take 100% width */
-    max-width: 400px; /* Set a maximum width for the text container if needed */
+    width: 100%; /* Teksti laius kastis*/
 }
