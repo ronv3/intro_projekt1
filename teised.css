@@ -75,3 +75,13 @@
 .image-text {
     width: 100%; /* Teksti laius kastis*/
 }
+.toidupilt {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 400px; /* Set a width for your container if needed */
+    height: 380px; /* Set a height for your container if needed */
+    border: solid white;
+    background-image: url('näidis.webp');
+    background-size: cover; /* Adjust as needed */
+}
