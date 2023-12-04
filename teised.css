@@ -47,25 +47,28 @@
 }
 
 
-.hall_kast_llaud{
+.hall_kast_llaud {
     position: absolute;
     top: 35%;
     right: 19%;
-    bottom: 35%;
+    bottom: 25%;
     left: 50%;
     
     background-color: rgba(170, 165, 165, 0.42); /* Semi-transparent black overlay */
     transform: translateX(-50%);
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column; /* Set flex direction to column */
+    align-items: center; /* Center the content horizontally */
+    justify-content: flex-start; /* Align content to the top */
     border-radius: 15px; 
-    align-items: flex-start;
-
+    padding: 15px; /* Optional: Add padding for better spacing */
+    max-width: 70%;
+    max-height: 60%;
 }
 
 .hall_kast_väli{
     position: absolute;
-    top: 20%;
+    top: 30%;
     right: 3%;
     bottom: 17%;
     left: 75%;
@@ -97,9 +100,6 @@
 
 /*paneb lehe keskele teksti*/
 .image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    align-items: left;
+    width: 100%; /* Make the text container take 100% width */
+    max-width: 400px; /* Set a maximum width for the text container if needed */
 }

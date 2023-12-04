@@ -6,6 +6,12 @@ body {
 p{
   text-align: left;
 }
+table{
+  border: 2px solid white;
+}
+td {
+  border: 2px solid white;
+}
 
 /*Navigatsiooni riba */
 #navigatsioon {
